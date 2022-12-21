@@ -247,7 +247,7 @@
 /* ---------- Content 4 ---------- */
 
 #sb-content-4{
-    margin: 10% 0;
+    margin: 10% 0 0;
 }
 
 .sb-heading-content-4{
@@ -274,6 +274,30 @@
 }
 
 /* ---------- End Content 4 ---------- */
+
+
+/* ---------- Content 5 ---------- */
+
+#sb-content-5{
+    margin: 8% 0;
+}
+
+.sb-heading-content-5 h1{
+    color: #000000;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.sb-heading-content-5 span{
+    color: #4B56D2;
+}
+
+.sb-description-content-5 p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* ---------- End Content 5 ---------- */
 
 
 
@@ -499,6 +523,28 @@
     
 
     /* ---------- End Content 4 ---------- */
+
+
+    /* ---------- Content 5 ---------- */
+
+    .sb-heading-content-5 h1{
+        color: #000000;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: justify;
+    }
+    
+    .sb-heading-content-5 span{
+        color: #4B56D2;
+    }
+    
+    .sb-description-content-5 p{
+        font-size: 18px;
+        font-weight: 400;
+        text-align: justify;
+    }
+
+    /* ---------- End Content 5 ---------- */
 
 }
 
