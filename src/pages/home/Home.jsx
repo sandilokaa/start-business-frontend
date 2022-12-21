@@ -185,18 +185,26 @@ const Home = () => {
                 <Container>
                     <Row>
                         <Col className="col-12 col-lg-4 sb-heading-content-5">
-                            <h1> 
-                                Kenalan Dulu Sama 
+                            <h1>
+                                Kenalan Dulu Sama
                                 <span> Start Business </span>
                             </h1>
                         </Col>
                         <Col className="col-12 col-lg-8 sb-description-content-5">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             </p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col className="col-12 col-lg-12 sb-introduction-content-5">
+                            <iframe className="youtube-content"
+                                src="https://www.youtube.com/embed/tgbNymZ7vqY" title="startbusiness-introduction"
+                            >
+                            </iframe>
                         </Col>
                     </Row>
                 </Container>
