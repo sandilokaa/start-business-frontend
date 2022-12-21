@@ -297,6 +297,15 @@
     font-weight: 400;
 }
 
+.sb-introduction-content-5{
+    margin: 4% 0;
+}
+
+.sb-introduction-content-5 .youtube-content{
+    width: 100%;
+    height: 540px;
+}
+
 /* ---------- End Content 5 ---------- */
 
 
@@ -542,6 +551,15 @@
         font-size: 18px;
         font-weight: 400;
         text-align: justify;
+    }
+
+    .sb-introduction-content-5{
+        margin: 4% 0;
+    }
+    
+    .sb-introduction-content-5 .youtube-content{
+        width: 100%;
+        height: 300px;
     }
 
     /* ---------- End Content 5 ---------- */
