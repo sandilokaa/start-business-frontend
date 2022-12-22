@@ -6,9 +6,11 @@ import {
     Image,
     Button
 } from "react-bootstrap";
+import Accordion from 'react-bootstrap/Accordion';
 import { Link } from "react-router-dom";
 import HomeLayout from "../../layouts/home/HomeLayout";
 import StartBusinessCardFeature from "../../components/home/StartBusinessCardFeature";
+import FAQAccordion from "../../components/home/FAQAccordion";
 import ImageContent1 from "../../assets/images/image-content-1.png";
 import ImageContent3 from "../../assets/images/image-content-3.png";
 import ImageCrewneck from "../../assets/images/image-swiper-1.png";
@@ -211,6 +213,81 @@ const Home = () => {
             </div>
 
             {/* ------------------- End SB Content 5 -------------------  */}
+
+
+            {/* ------------------- SB Content 6 -------------------  */}
+
+            <div id="sb-content-6">
+                <Container>
+                    <Row>
+                        <Col className="col-12 col-lg-6 sb-heading-content-6">
+                            <h1>Frequently Asked Questions</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </Col>
+                        <Col className="col-12 col-lg-6 sb-faq-accordion">
+                            <Accordion defaultActiveKey="0" flush>
+                                <FAQAccordion
+                                    eventKey="0"
+                                    accordionQuestion="Accordion Item #1"
+                                    accordionAnswer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum."
+                                />
+                                <FAQAccordion
+                                    eventKey="1"
+                                    accordionQuestion="Accordion Item #2"
+                                    accordionAnswer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum."
+                                />
+                                <FAQAccordion
+                                    eventKey="2"
+                                    accordionQuestion="Accordion Item #3"
+                                    accordionAnswer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum."
+                                />
+                                <FAQAccordion
+                                    eventKey="3"
+                                    accordionQuestion="Accordion Item #4"
+                                    accordionAnswer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum."
+                                />
+                                <FAQAccordion
+                                    eventKey="4"
+                                    accordionQuestion="Accordion Item #5"
+                                    accordionAnswer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                    culpa qui officia deserunt mollit anim id est laborum."
+                                />
+                            </Accordion>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+
+            {/* ------------------- End SB Content 6 -------------------  */}
 
         </HomeLayout>
 
