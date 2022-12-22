@@ -279,7 +279,7 @@
 /* ---------- Content 5 ---------- */
 
 #sb-content-5{
-    margin: 8% 0;
+    margin: 8% 0 0;
 }
 
 .sb-heading-content-5 h1{
@@ -307,6 +307,25 @@
 }
 
 /* ---------- End Content 5 ---------- */
+
+
+/* ---------- Content 6 ---------- */
+
+#sb-content-6{
+    margin: 4% 0;
+}
+
+.sb-heading-content-6 h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.accordion{
+    border: 1px solid #C8C8C8;
+    border-radius: 10px;
+}
+
+/* ---------- End Content 6 ---------- */
 
 
 
@@ -389,6 +408,10 @@
         color: #000000;
         font-weight: 700;
         font-size: 30px;
+    }
+
+    .sb-card-feature{
+        margin: 6% 0 0;
     }
     
     .sb-card-feature .card-icon{
@@ -563,6 +586,30 @@
     }
 
     /* ---------- End Content 5 ---------- */
+
+
+    /* ---------- Content 6 ---------- */
+
+    #sb-content-6{
+        margin: 6% 0;
+    }
+    
+    .sb-heading-content-6 h1{
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .sb-heading-content-6 p{
+        margin: 2% 0 0;
+        text-align: center;
+    }
+
+    .accordion{
+        margin: 6% 0 0;
+    }
+
+    /* ---------- End Content 6 ---------- */
 
 }
 
