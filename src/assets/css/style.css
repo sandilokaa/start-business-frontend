@@ -86,7 +86,7 @@
 }
 
 .sb-image-content-1 .image-content-1{
-    max-width: 550px;
+    max-width: 100%;
     height: auto;
     display: block;
 }
@@ -199,17 +199,17 @@
 /* ---------- Content 3 ---------- */
 
 #sb-content-3{
-    margin: 10% 0 0;
+    margin: 4% 0 0;
 }
 
 .sb-image-content-3 .image-content-3{
-    width:620px;
-    height: auto;
+    max-width: 100%;
     display: block;
+    left: 0;
 }
 
 .sb-heading-content-3{
-    margin: 24% 0 0;
+    margin: 25% 0 0;
 }
 
 .sb-heading-content-3 h1{
@@ -322,10 +322,95 @@
 
 .accordion{
     border: 1px solid #C8C8C8;
-    border-radius: 10px;
 }
 
 /* ---------- End Content 6 ---------- */
+
+
+/* ---------- Content 7 ---------- */
+
+#sb-content-7{
+    margin: 10% 0 0;
+    background: #4B56D2;
+    max-height: 100%;
+}
+
+.sb-about-us{
+    margin: 4% 0;
+    justify-content: start;
+}
+
+.sb-about-us h1{
+    font-size: 36px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.sb-about-us p{
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.sb-navigation{
+    margin: 5% 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sb-navigation h4{
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.sb-contact-us{
+    margin: 5% 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sb-contact-us h4{
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+#sb-content-7 hr{
+    border: 1px solid #FFFFFF;
+    /* color: #FFFFFF; */
+}
+
+.sb-copyright{
+    margin: 1% 0 2% 0;
+    align-items: center;
+    align-content: center;
+}
+
+.sb-copyright h6{
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+.sb-media-social{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sb-media-social i {
+    margin-left: 4%;
+    font-size: 20px;
+    color: #FFFFFF;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* ---------- End Content 7 ---------- */
 
 
 
@@ -370,8 +455,7 @@
     .sb-image-content-1 .image-content-1{
         display: block;
         margin: 0 auto;
-        width: 340px;
-        height: auto;
+        max-width: 100%;
     }
     
 
@@ -464,7 +548,7 @@
     /* ---------- Content 3 ---------- */
 
     #sb-content-3{
-        margin: 10% 0;
+        margin: -10% 0;
     }
 
     /* .sb-content-3-row{
@@ -474,8 +558,7 @@
     .sb-image-content-3 .image-content-3{
         display: block;
         margin: 8% auto;
-        width:340px;
-        height: auto;
+        max-width: 100%;
         /* display: none; */
     }
     
@@ -525,7 +608,7 @@
     /* ---------- Content 4 ---------- */
 
     #sb-content-4{
-        margin: 20% 0;
+        margin: 24% 0;
     }
     
     .sb-heading-content-4 h5{
@@ -558,6 +641,10 @@
 
 
     /* ---------- Content 5 ---------- */
+
+    #sb-content-5{
+        margin: -8% 0 0;
+    }
 
     .sb-heading-content-5 h1{
         color: #000000;
