@@ -76,24 +76,28 @@ const Home = () => {
                     </Row>
                     <Row>
                         <StartBusinessCardFeature
-                            cardIcon="bi bi-globe-asia-australia"
-                            cardTitle="Jangkauan Luas"
-                            cardDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                            cardName="sb-apparel"
+                            cardIcon="https://img.icons8.com/external-wanicon-solid-wanicon/64/FFFFFF/external-hoodie-autumn-clothes-accesories-wanicon-solid-wanicon.png"
+                            cardTitle="Produk Apparel"
+                            cardDescription="Anda tidak perlu pusing mencari produk karena kami menyediakan berbagai jenis produk apparel seperti kaos, hoodie, jaket dsb."
                         />
                         <StartBusinessCardFeature
-                            cardIcon="bi bi-send-check-fill"
-                            cardTitle="Pengiriman Kemanapun"
-                            cardDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                            cardName="sb-packaging"
+                            cardIcon="https://img.icons8.com/ios-filled/50/FFFFFF/cardboard-box.png"
+                            cardTitle="Packaging Custom"
+                            cardDescription="Anda dapat melakukan custom packaging untuk kebutuhan branding sehingga harga jual produk anda menjadi lebih tinggi."
                         />
                         <StartBusinessCardFeature
-                            cardIcon="bi bi-bullseye"
+                            cardName="sb-catalog"
+                            cardIcon="https://img.icons8.com/ios-filled/50/FFFFFF/product-documents.png"
                             cardTitle="Template Katalog"
-                            cardDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                            cardDescription="Anda mendapatkan ratusan desain katalog siap pakai dengan berbagai macam tema sehingga memudahkan anda untuk berjualan."
                         />
                         <StartBusinessCardFeature
-                            cardIcon="bi bi-camera-reels-fill"
-                            cardTitle="Metode Modern"
-                            cardDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                            cardName="sb-tutorial"
+                            cardIcon="https://img.icons8.com/ios-glyphs/30/FFFFFF/live-video-on--v1.png"
+                            cardTitle="Video Tutorial"
+                            cardDescription="Anda mendapatkan berbagai video tutorial dalam mengolola bisnis mulai dari editing, promosi hingga closing bagi pemula."
                         />
                     </Row>
                 </Container>
