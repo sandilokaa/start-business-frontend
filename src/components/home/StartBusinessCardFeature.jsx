@@ -3,7 +3,7 @@ import { Card, Col } from "react-bootstrap";
 import "../../assets/css/style.css";
 
 
-const StartBusinessCardFeature = ({ cardIcon, cardTitle, cardDescription }) => {
+const StartBusinessCardFeature = ({ cardName, cardIcon, cardTitle, cardDescription }) => {
 
     return (
 
@@ -11,7 +11,7 @@ const StartBusinessCardFeature = ({ cardIcon, cardTitle, cardDescription }) => {
             <Card className="sb-card-feature">
                 <Card.Body>
                     <div className="card-icon">
-                        <i className={cardIcon}></i>
+                        <img className={cardName} src={cardIcon} alt={cardTitle}></img>
                     </div>
                     <Card.Title className="card-title">{cardTitle}</Card.Title>
                     <Card.Text className="card-description">{cardDescription}</Card.Text>
