@@ -47,7 +47,7 @@ const Home = () => {
                                 <span className="dropship-style"> Dropship </span>
                             </h1>
                             <p>
-                                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum.
+                                Sebuah platform dropship untuk belajar dan memulai bisnis dropship dengan modal yang minim.
                             </p>
                             <Link to="/login">
                                 <Button className="btn btn-start">Mulai</Button>
@@ -288,6 +288,41 @@ const Home = () => {
             </div>
 
             {/* ------------------- End SB Content 6 -------------------  */}
+
+
+            {/* ------------------- SB Content 7 -------------------  */}
+            
+            <div id="sb-content-7">
+                <Container>
+                    <Row>
+                        <Col className="col-12 col-lg-4 sb-about-us">
+                            <h1>Start Business</h1>   
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            </p>
+                        </Col>
+                        <Col className="col-12 col-lg-4 sb-navigation">
+                            <h4>Navigasi</h4>
+                        </Col>
+                        <Col className="col-12 col-lg-4 sb-contact-us">
+                            <h4>Contact Us</h4>
+                        </Col>
+                        <hr />
+                    </Row>
+                    <Row>
+                        <Col className="col-12 col-lg-6 sb-copyright">
+                            <h6>© 2022 Geopardy. All rights reserved!. Powered by Sandi Loka</h6>  
+                        </Col>
+                        <Col className="col-12 col-lg-6 sb-media-social">
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-tiktok"></i>
+                            <i class="bi bi-youtube"></i>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
+            
+            {/* ------------------- End SB Content 7 -------------------  */}
 
         </HomeLayout>
 
