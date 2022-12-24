@@ -141,12 +141,10 @@
     margin: 6% 0;
 }
 
-.sb-card-feature .card-icon i{
-    font-size: 30px;
-}
-
-.sb-card-feature .card-icon .bi-globe-asia-australia{
-    padding: 9px 15px;
+.sb-card-feature .card-icon .sb-apparel{
+    padding: 5px;
+    width: 60px;
+    height: 60px;
     background: #4B56D2;
     border-radius: 100%;
     color: #FFFFFF;
@@ -154,8 +152,10 @@
     justify-content: center;
 }
 
-.sb-card-feature .card-icon .bi-send-check-fill{
-    padding: 9px 15px;
+.sb-card-feature .card-icon .sb-packaging{
+    padding: 5px;
+    width: 60px;
+    height: 60px;
     background: #FFEA8D;
     border-radius: 100%;
     color: #FFFFFF;
@@ -163,8 +163,10 @@
     justify-content: center;
 }
 
-.sb-card-feature .card-icon .bi-bullseye{
-    padding: 9px 15px;
+.sb-card-feature .card-icon .sb-catalog{
+    padding: 5px;
+    width: 60px;
+    height: 60px;
     background: #DF6765;
     border-radius: 100%;
     color: #FFFFFF;
@@ -172,8 +174,10 @@
     justify-content: center;
 }
 
-.sb-card-feature .card-icon .bi-camera-reels-fill{
-    padding: 9px 15px;
+.sb-card-feature .card-icon .sb-tutorial{
+    padding: 5px;
+    width: 60px;
+    height: 60px;
     background: #99DBC7;
     border-radius: 100%;
     color: #FFFFFF;
@@ -184,13 +188,13 @@
 .sb-card-feature .card-title{
     font-weight: 600;
     font-size: 18px;
-    margin: 14% 0 10%;
+    margin: 8% 0 8%;
 }
 
 .sb-card-feature .card-description{
     font-weight: 400;
     font-size: 18px;
-    margin: 6% 0;
+    margin: 2% 0;
 }
 
 /* ---------- End Content 2 ---------- */
@@ -502,12 +506,10 @@
         margin: 6% 0;
     }
     
-    .sb-card-feature .card-icon i{
-        font-size: 20px;
-    }
-    
-    .sb-card-feature .card-icon .bi-globe-asia-australia{
-        padding: 9px 14px;
+    .sb-card-feature .card-icon .sb-apparel{
+        padding: 5px;
+        width: 60px;
+        height: 60px;
         background: #4B56D2;
         border-radius: 100%;
         color: #FFFFFF;
@@ -515,8 +517,10 @@
         justify-content: center;
     }
     
-    .sb-card-feature .card-icon .bi-send-check-fill{
-        padding: 9px 14px;
+    .sb-card-feature .card-icon .sb-packaging{
+        padding: 5px;
+        width: 60px;
+        height: 60px;
         background: #FFEA8D;
         border-radius: 100%;
         color: #FFFFFF;
@@ -524,8 +528,10 @@
         justify-content: center;
     }
     
-    .sb-card-feature .card-icon .bi-bullseye{
-        padding: 9px 14px;
+    .sb-card-feature .card-icon .sb-catalog{
+        padding: 5px;
+        width: 60px;
+        height: 60px;
         background: #DF6765;
         border-radius: 100%;
         color: #FFFFFF;
@@ -533,13 +539,27 @@
         justify-content: center;
     }
     
-    .sb-card-feature .card-icon .bi-camera-reels-fill{
-        padding: 9px 14px;
+    .sb-card-feature .card-icon .sb-tutorial{
+        padding: 5px;
+        width: 60px;
+        height: 60px;
         background: #99DBC7;
         border-radius: 100%;
         color: #FFFFFF;
         align-items: center;
         justify-content: center;
+    }
+
+    .sb-card-feature .card-title{
+        font-weight: 600;
+        font-size: 18px;
+        margin: 4% 0 4%;
+    }
+    
+    .sb-card-feature .card-description{
+        font-weight: 400;
+        font-size: 18px;
+        margin: 2% 0;
     }
 
     /* ---------- End Content 2 ---------- */
