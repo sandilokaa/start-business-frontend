@@ -28,6 +28,8 @@ import { Pagination } from "swiper";
 
 import "../../assets/css/style.css";
 import "../../assets/css/swiper.css";
+// import "../../assets/css/floating.css";
+
 
 
 const Home = () => {
@@ -121,7 +123,8 @@ const Home = () => {
                                 Kembangkan Bisnismu Disini!
                             </h1>
                             <p>
-                                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum.
+                                Bersama Start Business kalian mendapatkan peluang untuk mendapatkan penghasilan tambahan dengan mudah dan praktis.
+                                Kalian hanya perlu fokus promosi produk anda, untuk masalah produksi, packing dan pengiriman kami yang urus.
                             </p>
                             <Link to="/login">
                                 <Button className="btn btn-start">Mulai</Button>
@@ -295,38 +298,67 @@ const Home = () => {
 
 
             {/* ------------------- SB Content 7 -------------------  */}
-            
+
             <div id="sb-content-7">
                 <Container>
-                    <Row>
+                    <Row className="sb-row-conclusion">
                         <Col className="col-12 col-lg-4 sb-about-us">
-                            <h1>Start Business</h1>   
+                            <h1>Start Business</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </p>
                         </Col>
                         <Col className="col-12 col-lg-4 sb-navigation">
                             <h4>Navigasi</h4>
+                            <div className="sb-link">
+                                <a href="#Example">Home</a>
+                                <a href="#Example">Collection</a>
+                                <a href="#Example">About Us</a>
+                                <a href="#Example">Contact Us</a>
+                                <a href="#Example">Class</a>
+                            </div>
                         </Col>
                         <Col className="col-12 col-lg-4 sb-contact-us">
                             <h4>Contact Us</h4>
+                            <div className="icon-contact">
+                                <div className="sb-location">
+                                    <i class="bi bi-geo-fill"></i>
+                                    <p>Semarang, Indonesia</p>
+                                </div>
+                                <div className="sb-whatsapp">
+                                    <i class="bi bi-whatsapp"></i>
+                                    <p>085975979880</p>
+                                </div>
+                                <div className="sb-email">
+                                    <i class="bi bi-envelope-at-fill"></i>
+                                    <p>startbusinessind@gmail.com</p>
+                                </div>
+                            </div>
                         </Col>
                         <hr />
                     </Row>
-                    <Row>
+                    <Row className="sb-row-ownership">
                         <Col className="col-12 col-lg-6 sb-copyright">
-                            <h6>© 2022 Geopardy. All rights reserved!. Powered by Sandi Loka</h6>  
+                            <h6>© 2022 Geopardy. All rights reserved!. Powered by Sandi Loka</h6>
                         </Col>
                         <Col className="col-12 col-lg-6 sb-media-social">
-                            <i class="bi bi-instagram"></i>
-                            <i class="bi bi-tiktok"></i>
-                            <i class="bi bi-youtube"></i>
+                            <div className="icon">
+                                <i class="bi bi-instagram"></i>
+                                <i class="bi bi-tiktok"></i>
+                                <i class="bi bi-youtube"></i>
+                            </div>
                         </Col>
                     </Row>
                 </Container>
             </div>
-            
+
             {/* ------------------- End SB Content 7 -------------------  */}
+
+
+            {/* ------------------- SB Content 8 -------------------  */}
+
+
+            {/* ------------------- End SB Content 8 -------------------  */}
 
         </HomeLayout>
 
