@@ -408,15 +408,32 @@
     /* ---------- Content Seacrh ---------- */
 
     #sb-search-bar{
-        margin: 30% 0;
+        margin: 30% 0 0;
     }
 
     .sb-search-group{
         width: 100%;
     }
-    
 
     /* ---------- End Content Seacrh ---------- */
+
+
+    /* ---------- Content Categories ---------- */
+
+    #sb-categories hr{
+        width: 60%;
+    }
+
+    /* ---------- End Content Categories ---------- */
+
+    
+    /* ---------- Content Related Products ---------- */
+    
+    #sb-related-products hr{
+        width: 60%;
+    }
+    
+    /* ---------- End Content Related Products ---------- */
 
     /* ================ END COLLECTION PAGE ================ */
 
