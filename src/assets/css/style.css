@@ -25,6 +25,8 @@
     margin-right: 20px;
     color: #000000;
     font-weight: 500;
+    text-decoration: none;
+    list-style: none;
 
 }
 
@@ -42,6 +44,10 @@
 
 /* ---------- End Navbar ---------- */
 
+
+/* =========================================================================== */
+
+/* ================================ HOME PAGE ================================ */
 
 /* ---------- Content 1 ---------- */
 
@@ -438,3 +444,99 @@
 }
 
 /* ---------- End Content 7 ---------- */
+
+/* ================================ END HOME PAGE ================================ */
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+/* ================================ COLLECTION PAGE ================================ */
+
+
+/* ---------- Content Seacrh ---------- */
+
+#sb-search-bar{
+    margin: 10% 0 0;
+}
+
+.sb-search-col{
+    display: flex;
+    justify-content: center;
+}
+
+.sb-search-group{
+    width: 60%;
+}
+
+.sb-search-control{
+    background: #FFFFFF;
+    height: 50px;
+    border: 1px solid #000000;
+}
+
+/* ---------- End Content Seacrh ---------- */
+
+
+/* ---------- Content Categories ---------- */
+
+#sb-categories{
+    margin: 4% 0 0;
+}
+
+#sb-categories h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#sb-categories hr{
+    width: 20%;
+    border: 1px solid #4B56D2;
+}
+
+.sb-categories-type{
+    height: 90%;
+    transition: 0.2s all ease-in-out;
+}
+
+.sb-categories-type:hover{
+    cursor: pointer;
+    transform: translateY(-6px);
+}
+
+.sb-categories-body{
+    display: flex;
+    align-items: center;
+}
+
+.sb-categories-title{
+    align-items: center;
+    font-size: 18px;
+}
+
+/* ---------- End Content Categories ---------- */
+
+#sb-related-products{
+    margin: 4% 0 0;
+}
+
+#sb-related-products h1{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#sb-related-products hr{
+    width: 20%;
+    border: 1px solid #4B56D2;
+}
+
+/* ---------- Content Related Products ---------- */
+
+
+
+/* ---------- End Content Related Products ---------- */
+
+/* ================================ END COLLECTION PAGE ================================ */
+
+/* =========================================================================== */
