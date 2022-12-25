@@ -28,7 +28,7 @@ import { Pagination } from "swiper";
 
 import "../../assets/css/style.css";
 import "../../assets/css/swiper.css";
-// import "../../assets/css/floating.css";
+import "../../assets/css/responsive.css";
 
 
 
@@ -339,7 +339,7 @@ const Home = () => {
                     </Row>
                     <Row className="sb-row-ownership">
                         <Col className="col-12 col-lg-6 sb-copyright">
-                            <h6>© 2022 Geopardy. All rights reserved!. Powered by Sandi Loka</h6>
+                            <h6>© 2022 Start Business. All rights reserved!.</h6>
                         </Col>
                         <Col className="col-12 col-lg-6 sb-media-social">
                             <div className="icon">
