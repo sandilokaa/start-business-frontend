@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState, useRef } from "react";
 import {
     Row,
     Col,
@@ -8,8 +8,43 @@ import {
 } from "react-bootstrap";
 import HomeLayout from "../../layouts/home/HomeLayout";
 import StartBusinessCardCategories from "../../components/collection/StartBusinessCardCategories";
+import StartBusinessCardProducts from "../../components/collection/StartBusinessCardProducts";
+import axios from "axios";
 
 const Collection = () => {
+
+    const [productsData, setProductsData] = useState();
+
+    // const nameField = useRef();
+
+    const onSearch = async () => {
+
+        // const getProductData = nameField.current.value;
+
+        try {
+
+            const getProductsDataRequest = await axios.get(
+                `https://63a944b7f4962215b590a7ea.mockapi.io/api/v1/products/search`,
+                {
+                    headers: {
+                        "Access-Control-Allow-Origin": "*"
+                    }
+                }
+            );
+
+            const getProductstDataResponse = getProductsDataRequest.data;
+
+            setProductsData(getProductstDataResponse);
+
+        } catch (err) {
+            // alert(err.message);
+        }
+
+    };
+
+    useEffect(() => {
+        onSearch();
+    });
 
     return (
 
@@ -27,6 +62,7 @@ const Collection = () => {
                                     placeholder="Cari produk disini..."
                                     aria-label="Cari produk disini..."
                                     aria-describedby="basic-addon2"
+                                    // ref={nameField}
                                 />
                             </InputGroup>
                         </Col>
@@ -67,7 +103,7 @@ const Collection = () => {
                     </Row>
                 </Container>
             </div>
-            
+
             {/* ------------------- End SB Content Categories -------------------  */}
 
 
@@ -78,11 +114,20 @@ const Collection = () => {
 
                     <h1>RELATED PRODUCTS</h1>
                     <hr />
-                    
+
                     <Row>
-                        <Col>
-                        
-                        </Col>
+                        {productsData != null ?
+                            productsData.map((item) => {
+                                return (
+                                    <StartBusinessCardProducts
+                                        key={item.id}
+                                        cardImage={item.picture}
+                                        cardTitle={item.name}
+                                        cardPrice={item.price}
+                                    />
+                                );
+                            }) : null
+                        }
                     </Row>
                 </Container>
             </div>
