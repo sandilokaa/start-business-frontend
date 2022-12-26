@@ -421,7 +421,11 @@
     /* ---------- Content Categories ---------- */
 
     #sb-categories hr{
-        width: 60%;
+        width: 55%;
+    }
+
+    #sb-categories h1{
+        font-size: 18px;
     }
 
     /* ---------- End Content Categories ---------- */
@@ -430,7 +434,11 @@
     /* ---------- Content Related Products ---------- */
     
     #sb-related-products hr{
-        width: 60%;
+        width: 55%;
+    }
+
+    #sb-related-products h1{
+        font-size: 18px;
     }
     
     /* ---------- End Content Related Products ---------- */
