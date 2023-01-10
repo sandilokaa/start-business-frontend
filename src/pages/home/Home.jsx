@@ -6,9 +6,11 @@ import {
     Image,
     Button
 } from "react-bootstrap";
+import { Helmet } from 'react-helmet';
 import Accordion from 'react-bootstrap/Accordion';
 import { Link } from "react-router-dom";
 import HomeLayout from "../../layouts/home/HomeLayout";
+import FooterGeneral from "../../components/footer/Footer";
 import StartBusinessCardFeature from "../../components/home/StartBusinessCardFeature";
 import FAQAccordion from "../../components/home/FAQAccordion";
 import ImageContent1 from "../../assets/images/image-content-1.png";
@@ -29,7 +31,6 @@ import { Pagination } from "swiper";
 import "../../assets/css/style.css";
 import "../../assets/css/swiper.css";
 import "../../assets/css/responsive.css";
-
 
 
 const Home = () => {
@@ -299,64 +300,20 @@ const Home = () => {
 
             {/* ------------------- SB Content 7 -------------------  */}
 
-            <div id="sb-content-7">
-                <Container>
-                    <Row className="sb-row-conclusion">
-                        <Col className="col-12 col-lg-4 sb-about-us">
-                            <h1>Start Business</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </p>
-                        </Col>
-                        <Col className="col-12 col-lg-4 sb-navigation">
-                            <h4>Navigasi</h4>
-                            <div className="sb-link">
-                                <a href="#Example">Home</a>
-                                <a href="#Example">Collection</a>
-                                <a href="#Example">About Us</a>
-                                <a href="#Example">Contact Us</a>
-                                <a href="#Example">Class</a>
-                            </div>
-                        </Col>
-                        <Col className="col-12 col-lg-4 sb-contact-us">
-                            <h4>Contact Us</h4>
-                            <div className="icon-contact">
-                                <div className="sb-location">
-                                    <i class="bi bi-geo-fill"></i>
-                                    <p>Semarang, Indonesia</p>
-                                </div>
-                                <div className="sb-whatsapp">
-                                    <i class="bi bi-whatsapp"></i>
-                                    <p>085975979880</p>
-                                </div>
-                                <div className="sb-email">
-                                    <i class="bi bi-envelope-at-fill"></i>
-                                    <p>startbusinessind@gmail.com</p>
-                                </div>
-                            </div>
-                        </Col>
-                        <hr />
-                    </Row>
-                    <Row className="sb-row-ownership">
-                        <Col className="col-12 col-lg-6 sb-copyright">
-                            <h6>© 2022 Start Business. All rights reserved!.</h6>
-                        </Col>
-                        <Col className="col-12 col-lg-6 sb-media-social">
-                            <div className="icon">
-                                <i class="bi bi-instagram"></i>
-                                <i class="bi bi-tiktok"></i>
-                                <i class="bi bi-youtube"></i>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
+            <FooterGeneral/>
 
             {/* ------------------- End SB Content 7 -------------------  */}
 
 
             {/* ------------------- SB Content 8 -------------------  */}
 
+            <div id="myButton">
+                <Helmet>
+                    {
+                        console.log('halo')
+                    }
+                </Helmet>
+            </div>
 
             {/* ------------------- End SB Content 8 -------------------  */}
 
