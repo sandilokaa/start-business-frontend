@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import {
     Row,
     Col,
@@ -7,44 +7,62 @@ import {
     InputGroup
 } from "react-bootstrap";
 import HomeLayout from "../../layouts/home/HomeLayout";
+import FooterGeneral from "../../components/footer/Footer";
 import StartBusinessCardCategories from "../../components/collection/StartBusinessCardCategories";
 import StartBusinessCardProducts from "../../components/collection/StartBusinessCardProducts";
 import axios from "axios";
+import CurrencyFormatter from "../../assets/js/currencyFormatter";
 
 const Collection = () => {
 
     const [productsData, setProductsData] = useState();
+    const [category, setCategory] = useState([""]);
 
-    // const nameField = useRef();
+    const nameField = useRef();
 
-    const onSearch = async () => {
+    useEffect(() => {
 
-        // const getProductData = nameField.current.value;
+        const onSearch = async () => {
 
-        try {
+            const getProductData = nameField.current.value;
 
-            const getProductsDataRequest = await axios.get(
-                `https://63a944b7f4962215b590a7ea.mockapi.io/api/v1/products/search`,
-                {
-                    headers: {
-                        "Access-Control-Allow-Origin": "*"
+            try {
+
+                const getProductsDataRequest = await axios.get(
+                    `http://localhost:2000/api/v1/products?name=${getProductData}&category=${category}`,
+                    {
+                        headers: {
+                            "Access-Control-Allow-Origin": "*"
+                        }
                     }
-                }
-            );
+                );
 
-            const getProductstDataResponse = getProductsDataRequest.data;
+                const getProductstDataResponse = getProductsDataRequest.data;
 
-            setProductsData(getProductstDataResponse);
+                setProductsData(getProductstDataResponse.data.handleGetAllProducts);
 
-        } catch (err) {
-            // alert(err.message);
-        }
+            } catch (err) {
+                alert(err.message);
+            }
+
+        };
+
+        onSearch();
+
+    });
+    
+
+
+    const onReset = () => {
+
+        setCategory("");
+
+        nameField.current.value = "";
+
+        window.location.reload("/collection");
 
     };
 
-    useEffect(() => {
-        onSearch();
-    });
 
     return (
 
@@ -62,7 +80,7 @@ const Collection = () => {
                                     placeholder="Cari produk disini..."
                                     aria-label="Cari produk disini..."
                                     aria-describedby="basic-addon2"
-                                    // ref={nameField}
+                                    ref={nameField}
                                 />
                             </InputGroup>
                         </Col>
@@ -82,23 +100,28 @@ const Collection = () => {
                     <hr />
                     <Row>
                         <StartBusinessCardCategories
-                            dotIcon="sb-icon-1"
                             cardTitle="Semua"
+                            handleClick={onReset}
                         />
                         <StartBusinessCardCategories
                             cardTitle="Kaos"
+                            handleClick={() => setCategory("Kaos")}
                         />
                         <StartBusinessCardCategories
                             cardTitle="Hoodie"
+                            handleClick={() => setCategory("Hoodie")}
                         />
                         <StartBusinessCardCategories
                             cardTitle="Crewneck"
+                            handleClick={() => setCategory("Crewneck")}
                         />
                         <StartBusinessCardCategories
                             cardTitle="Polo"
+                            handleClick={() => setCategory("Polo")}
                         />
                         <StartBusinessCardCategories
                             cardTitle="Aksesoris"
+                            handleClick={() => setCategory("Aksesoris")}
                         />
                     </Row>
                 </Container>
@@ -116,23 +139,30 @@ const Collection = () => {
                     <hr />
 
                     <Row>
-                        {productsData != null ?
+                        {productsData &&
                             productsData.map((item) => {
                                 return (
                                     <StartBusinessCardProducts
                                         key={item.id}
                                         cardImage={item.picture}
                                         cardTitle={item.name}
-                                        cardPrice={item.price}
+                                        cardPrice={CurrencyFormatter(item.price)}
                                     />
                                 );
-                            }) : null
+                            })
                         }
                     </Row>
                 </Container>
             </div>
 
             {/* ------------------- End SB Content Related Products -------------------  */}
+
+
+            {/* ------------------- SB Footer -------------------  */}
+
+            <FooterGeneral/>
+
+            {/* ------------------- End SB Footer -------------------  */}
 
         </HomeLayout>
 

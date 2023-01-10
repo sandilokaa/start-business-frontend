@@ -7,7 +7,7 @@ const StartBusinessCardProducts = ({ key, cardTitle, cardImage, cardPrice, handl
 
     return (
 
-        <Col className="col-6 col-lg-3 mt-3">
+        <Col className="col-6 col-lg-3 mt-4">
             <Card className="sb-products" onClick={handleClick} key={key}>
                 <Card.Img className="sb-products-image" src={cardImage} />
                 <Card.Body>
