@@ -15,10 +15,11 @@ import CurrencyFormatter from "../../assets/js/currencyFormatter";
 
 const Collection = () => {
 
-    const [productsData, setProductsData] = useState();
+    const [productsData, setProductsData] = useState([]);
     const [category, setCategory] = useState([""]);
 
     const nameField = useRef();
+
 
     useEffect(() => {
 
@@ -29,7 +30,7 @@ const Collection = () => {
             try {
 
                 const getProductsDataRequest = await axios.get(
-                    `https://startbusiness.up.railway.app/api/v1/products?name=${getProductData}&category=${category}`,
+                    `http://localhost:2000/api/v1/products?name=${getProductData}&category=${category}`,
                     {
                         headers: {
                             "Access-Control-Allow-Origin": "*"
@@ -50,7 +51,7 @@ const Collection = () => {
         onSearch();
 
     });
-    
+
 
 
     const onReset = () => {
@@ -139,11 +140,11 @@ const Collection = () => {
                     <hr />
 
                     <Row>
-                        {productsData &&
+                        {
                             productsData.map((item) => {
                                 return (
                                     <StartBusinessCardProducts
-                                        key={item.id}
+                                        key={item._id}
                                         cardImage={item.picture}
                                         cardTitle={item.name}
                                         cardPrice={CurrencyFormatter(item.price)}
@@ -160,7 +161,7 @@ const Collection = () => {
 
             {/* ------------------- SB Footer -------------------  */}
 
-            <FooterGeneral/>
+            <FooterGeneral />
 
             {/* ------------------- End SB Footer -------------------  */}
 
