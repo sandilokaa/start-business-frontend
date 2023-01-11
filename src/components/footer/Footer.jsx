@@ -35,15 +35,15 @@ const FooterGeneral = () => {
                         <h4>Contact Us</h4>
                         <div className="icon-contact">
                             <div className="sb-location">
-                                <i class="bi bi-geo-fill"></i>
+                                <i className="bi bi-geo-fill"></i>
                                 <p>Semarang, Indonesia</p>
                             </div>
                             <div className="sb-whatsapp">
-                                <i class="bi bi-whatsapp"></i>
+                                <i className="bi bi-whatsapp"></i>
                                 <p>085975979880</p>
                             </div>
                             <div className="sb-email">
-                                <i class="bi bi-envelope-at-fill"></i>
+                                <i className="bi bi-envelope-at-fill"></i>
                                 <p>startbusinessind@gmail.com</p>
                             </div>
                         </div>
@@ -56,9 +56,9 @@ const FooterGeneral = () => {
                     </Col>
                     <Col className="col-12 col-lg-6 sb-media-social">
                         <div className="icon">
-                            <i class="bi bi-instagram"></i>
-                            <i class="bi bi-tiktok"></i>
-                            <i class="bi bi-youtube"></i>
+                            <i className="bi bi-instagram"></i>
+                            <i className="bi bi-tiktok"></i>
+                            <i className="bi bi-youtube"></i>
                         </div>
                     </Col>
                 </Row>
