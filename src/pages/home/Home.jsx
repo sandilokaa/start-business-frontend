@@ -116,7 +116,7 @@ const Home = () => {
                 <Container>
                     <Row className="sb-content-3-row">
                         <Col className="col-12 col-lg-7 sb-image-content-3">
-                            <Image className="image-content-3" src={ImageContent3} alt="startbusiness-image-content-3" />
+                            <Image className="image-content-3" src={ImageContent3} alt="startbusiness-image-content-3" loading="lazy"/>
                         </Col>
                         <Col className="col-12 col-lg-5 sb-heading-content-3">
                             <h1>
@@ -160,25 +160,25 @@ const Home = () => {
                                 className="swiper"
                             >
                                 <SwiperSlide className="swiper-slide">
-                                    <Image src={ImageCrewneck} alt="startbusiness-image-content-4" />
+                                    <Image src={ImageCrewneck} alt="startbusiness-image-content-4" loading="lazy"/>
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide">
-                                    <Image src={ImageHoodie} alt="startbusiness-image-content-4" />
+                                    <Image src={ImageHoodie} alt="startbusiness-image-content-4" loading="lazy"/>
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide">
-                                    <Image src={ImageKaosPolos} alt="startbusiness-image-content-4" />
+                                    <Image src={ImageKaosPolos} alt="startbusiness-image-content-4" loading="lazy"/>
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide">
-                                    <Image src={ImagePolo} alt="startbusiness-image-content-4" />
+                                    <Image src={ImagePolo} alt="startbusiness-image-content-4" loading="lazy"/>
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide">
-                                    <Image src={ImageTopi} alt="startbusiness-image-content-4" />
+                                    <Image src={ImageTopi} alt="startbusiness-image-content-4" loading="lazy"/>
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide">
-                                    <Image src={ImageToteBag} alt="startbusiness-image-content-4" />
+                                    <Image src={ImageToteBag} alt="startbusiness-image-content-4" loading="lazy"/>
                                 </SwiperSlide>
                                 <SwiperSlide className="swiper-slide">
-                                    <Image src={ImageJaket} alt="startbusiness-image-content-4" />
+                                    <Image src={ImageJaket} alt="startbusiness-image-content-4" loading="lazy"/>
                                 </SwiperSlide>
                             </Swiper>
                         </Col>
@@ -212,7 +212,9 @@ const Home = () => {
                     <Row>
                         <Col className="col-12 col-lg-12 sb-introduction-content-5">
                             <iframe className="youtube-content"
-                                src="https://www.youtube.com/embed/tgbNymZ7vqY" title="startbusiness-introduction"
+                                src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+                                title="startbusiness-introduction"
+                                loading="lazy"
                             >
                             </iframe>
                         </Col>

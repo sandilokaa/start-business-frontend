@@ -11,7 +11,7 @@ const StartBusinessCardFeature = ({ cardName, cardIcon, cardTitle, cardDescripti
             <Card className="sb-card-feature">
                 <Card.Body>
                     <div className="card-icon">
-                        <img className={cardName} src={cardIcon} alt={cardTitle}></img>
+                        <img className={cardName} src={cardIcon} alt={cardTitle} loading="lazy"></img>
                     </div>
                     <Card.Title className="card-title">{cardTitle}</Card.Title>
                     <Card.Text className="card-description">{cardDescription}</Card.Text>
