@@ -27,7 +27,7 @@ const Collection = () => {
 
             const getProductData = nameField.current.value;
 
-            try {
+            // try {
 
                 const getProductsDataRequest = await axios.get(
                     `https://startbusiness.up.railway.app/api/v1/products?name=${getProductData}&category=${category}`,
@@ -42,9 +42,9 @@ const Collection = () => {
 
                 setProductsData(getProductstDataResponse.data.handleGetAllProducts);
 
-            } catch (err) {
-                alert(err.message);
-            }
+            // } catch (err) {
+            //     alert(err.message);
+            // }
 
         };
 
