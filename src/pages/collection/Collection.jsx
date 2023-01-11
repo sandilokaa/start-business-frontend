@@ -50,9 +50,14 @@ const Collection = () => {
         onSearch();
 
     });
+    
 
 
     const onReset = () => {
+
+        setCategory("");
+
+        nameField.current.value = "";
 
         window.location.reload("/collection");
 
