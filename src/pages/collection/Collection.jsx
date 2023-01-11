@@ -30,7 +30,7 @@ const Collection = () => {
             try {
 
                 const getProductsDataRequest = await axios.get(
-                    `http://localhost:2000/api/v1/products?name=${getProductData}&category=${category}`,
+                    `https://startbusiness.up.railway.app/api/v1/products?name=${getProductData}&category=${category}`,
                     {
                         headers: {
                             "Access-Control-Allow-Origin": "*"
