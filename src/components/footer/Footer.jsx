@@ -22,7 +22,7 @@ const FooterGeneral = () => {
                         </p>
                     </Col>
                     <Col className="col-12 col-lg-4 sb-navigation">
-                        <h4>Navigasi</h4>
+                        <h4>Help</h4>
                         <div className="sb-link">
                             <a href="#Example">Home</a>
                             <a href="#Example">Collection</a>
