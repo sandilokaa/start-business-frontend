@@ -369,7 +369,8 @@
 }
 
 .sb-navigation h4{
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .sb-navigation a{
@@ -648,7 +649,7 @@
 }
 
 #sb-related-products hr{
-    width: 20%;
+    width: 40%;
     border: 1px solid #4B56D2;
 }
 
@@ -678,5 +679,91 @@
 /* ---------- End Content Related Products ---------- */
 
 /* ================================ END COLLECTION PAGE ================================ */
+
+/* =========================================================================== */
+
+
+/* =========================================================================== */
+
+/* ================================ DETAIL PAGE ================================ */
+
+#sb-product-detail .sb-product-image{
+    margin-top: 20%;
+}
+
+#sb-product-detail .product-image{
+    height: auto;
+    width: 100%;
+}
+
+.product-preview{
+    background-color: #FFFFFF;
+    z-index: 100;
+    opacity: 1;
+}
+
+#sb-product-detail .product-image-preview{
+    margin: 60% 4% 0;
+    height: 80px;
+    width: 80px;
+}
+
+#sb-product-detail .product-image-preview:hover{
+    cursor: pointer;
+}
+
+#sb-product-detail .sb-description-detail{
+    margin: 12% 0 0;
+}
+
+#sb-product-detail .sb-description-detail h1{
+    font-size: 24px;
+}
+
+#sb-product-detail .sb-product-price p{
+    margin: 4% 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: #4B56D2;
+}
+
+#sb-product-detail .sb-product-materials p{
+    margin: 4% 0;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+
+#sb-product-detail .sb-product-color p{
+    margin: 4% 0;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+
+#sb-product-detail .sb-product-attention p:nth-child(1){
+    margin: 4% 0;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+
+#sb-product-detail ul{
+    margin: 4% 0;
+    left: -3%;
+}
+
+.sb-size-chart{
+    margin: 4% 0 0;
+}
+
+.sb-size-chart p{
+    margin: 2% 0;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+
+/* ================================ END DETAIL PAGE ================================ */
 
 /* =========================================================================== */
