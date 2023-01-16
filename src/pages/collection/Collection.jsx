@@ -4,10 +4,10 @@ import {
     Col,
     Container,
     Form,
-    InputGroup
+    InputGroup,
+    Button
 } from "react-bootstrap";
 import HomeLayout from "../../layouts/home/HomeLayout";
-import FooterGeneral from "../../components/footer/Footer";
 import StartBusinessCardCategories from "../../components/collection/StartBusinessCardCategories";
 import StartBusinessCardProducts from "../../components/collection/StartBusinessCardProducts";
 import axios from "axios";
@@ -21,37 +21,37 @@ const Collection = () => {
     const nameField = useRef();
 
 
+    const onSearch = async () => {
+
+        const getProductData = nameField.current.value;
+
+        // try {
+
+        const getProductsDataRequest = await axios.get(
+            `http://localhost:2000/api/v1/products?name=${getProductData}&category=${category}`,
+            {
+                headers: {
+                    "Access-Control-Allow-Origin": "*"
+                }
+            }
+        );
+
+        const getProductstDataResponse = getProductsDataRequest.data;
+
+        setProductsData(getProductstDataResponse.data.handleGetAllProducts);
+
+        // } catch (err) {
+        //     alert(err.message);
+        // }
+
+    };
+
     useEffect(() => {
-
-        const onSearch = async () => {
-
-            const getProductData = nameField.current.value;
-
-            // try {
-
-                const getProductsDataRequest = await axios.get(
-                    `https://startbusiness.up.railway.app/api/v1/products?name=${getProductData}&category=${category}`,
-                    {
-                        headers: {
-                            "Access-Control-Allow-Origin": "*"
-                        }
-                    }
-                );
-
-                const getProductstDataResponse = getProductsDataRequest.data;
-
-                setProductsData(getProductstDataResponse.data.handleGetAllProducts);
-
-            // } catch (err) {
-            //     alert(err.message);
-            // }
-
-        };
 
         onSearch();
 
-    });
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [category]);
 
 
     const onReset = () => {
@@ -83,6 +83,9 @@ const Collection = () => {
                                     aria-describedby="basic-addon2"
                                     ref={nameField}
                                 />
+                                <Button variant="outline-dark" id="button-addon2" onClick={onSearch}>
+                                    Search
+                                </Button>
                             </InputGroup>
                         </Col>
                     </Row>
@@ -136,8 +139,18 @@ const Collection = () => {
             <div id="sb-related-products">
                 <Container>
 
-                    <h1>RELATED PRODUCTS</h1>
-                    <hr />
+                    <div>
+                        <Row>
+                            <Col className="col-7 col-lg-6">
+                                <h1>RELATED PRODUCTS</h1>
+                                <hr />
+                            </Col>
+                            <Col className="col-5 col-lg-6 d-flex justify-content-end text-muted">
+                                <p>Showing {productsData.length} items</p>
+                            </Col>
+                        </Row>
+                    </div>
+
 
                     <Row>
                         {
@@ -145,6 +158,7 @@ const Collection = () => {
                                 return (
                                     <StartBusinessCardProducts
                                         key={item._id}
+                                        productId={item._id}
                                         cardImage={item.picture}
                                         cardTitle={item.name}
                                         cardPrice={CurrencyFormatter(item.price)}
@@ -157,13 +171,6 @@ const Collection = () => {
             </div>
 
             {/* ------------------- End SB Content Related Products -------------------  */}
-
-
-            {/* ------------------- SB Footer -------------------  */}
-
-            <FooterGeneral />
-
-            {/* ------------------- End SB Footer -------------------  */}
 
         </HomeLayout>
 
