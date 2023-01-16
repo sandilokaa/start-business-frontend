@@ -10,7 +10,6 @@ import { Helmet } from 'react-helmet';
 import Accordion from 'react-bootstrap/Accordion';
 import { Link } from "react-router-dom";
 import HomeLayout from "../../layouts/home/HomeLayout";
-import FooterGeneral from "../../components/footer/Footer";
 import StartBusinessCardFeature from "../../components/home/StartBusinessCardFeature";
 import FAQAccordion from "../../components/home/FAQAccordion";
 import ImageContent1 from "../../assets/images/image-content-1.png";
@@ -299,12 +298,6 @@ const Home = () => {
 
             {/* ------------------- End SB Content 6 -------------------  */}
 
-
-            {/* ------------------- SB Content 7 -------------------  */}
-
-            <FooterGeneral/>
-
-            {/* ------------------- End SB Content 7 -------------------  */}
 
 
             {/* ------------------- SB Content 8 -------------------  */}
