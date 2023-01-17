@@ -16,11 +16,12 @@ import ReactImageMagnify from 'react-image-magnify';
 const ProductDetail = () => {
 
     const [productData, setProductData] = useState();
+    
+    const [materialsDescription, setMaterialsDescription] = useState([]);
 
     const params = useLocation();
 
     const productId = (params.pathname).split('/')[3];
-
 
     const onSearch = async () => {
 
@@ -37,6 +38,8 @@ const ProductDetail = () => {
 
             const getProductstDataResponse = getProductsDataRequest.data;
 
+            setMaterialsDescription([...getProductstDataResponse.data.handleGetProductById.description.split(".")])
+
             setProductData(getProductstDataResponse.data.handleGetProductById);
 
         } catch (err) {
@@ -52,7 +55,7 @@ const ProductDetail = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [productId]);
 
-    // console.log(productData.description);
+    // console.log(materialsDescription)
 
     return (
 
@@ -62,7 +65,7 @@ const ProductDetail = () => {
 
             <div id="sb-product-detail">
                 <Container>
-                    <Row>
+                    <Row  key={productId}>
                         <Col className="col-10 col-lg-5 sb-image-detail">
                             <div className="sb-product-image">
                                 {/* <Image className="product-image" src={productData ? productData.picture : null} alt="startbusiness-select-color" /> */}
@@ -106,17 +109,17 @@ const ProductDetail = () => {
                             </div>
                             <div className="sb-product-materials">
                                 <p>Description</p>
-                                {/* {
-                                    materialsDescription.map((materialsItem) => {
+                                {
+                                    materialsDescription.map((materialsItem, index) => {
                                         return (
-                                            <ul>
+                                            <ul key={index}>
                                                 <li>
                                                     {materialsItem}
                                                 </li>
                                             </ul>
                                         )
                                     })
-                                } */}
+                                }
                             </div>
                             <div className="sb-product-color">
                                 <p>Select Color</p>
