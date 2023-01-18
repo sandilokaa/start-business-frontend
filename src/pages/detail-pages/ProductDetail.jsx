@@ -11,6 +11,7 @@ import { useLocation } from "react-router-dom";
 import axios from "axios";
 import SelectColor from "../../assets/images/select-color.png";
 import TableSizeChart from "../../assets/images/table-size-chart.png";
+import TableSizeChartResponsive from "../../assets/images/table-size-chart-resp.png";
 import ReactImageMagnify from 'react-image-magnify';
 
 const ProductDetail = () => {
@@ -66,7 +67,7 @@ const ProductDetail = () => {
             <div id="sb-product-detail">
                 <Container>
                     <Row  key={productId}>
-                        <Col className="col-10 col-lg-5 sb-image-detail">
+                        <Col className="col-9 col-lg-5 sb-image-detail">
                             <div className="sb-product-image">
                                 {/* <Image className="product-image" src={productData ? productData.picture : null} alt="startbusiness-select-color" /> */}
 
@@ -89,7 +90,7 @@ const ProductDetail = () => {
                                 />
                             </div>
                         </Col>
-                        <Col className="col-2 col-lg-2 sb-image-preview">
+                        <Col className="col-3 col-lg-2 sb-image-preview">
                             <div className="sb-product-image-preview">
                                 <a href={productData ? productData.picture : null}>
                                     <Image className="product-image-preview" src={productData ? productData.picture : null} alt="startbusiness-select-color" />
@@ -140,6 +141,7 @@ const ProductDetail = () => {
                             <div className="table-size-chart">
                                 <p>Additional Information</p>
                                 <Image className="size-chart" src={TableSizeChart} alt="startbusiness-size-chart" />
+                                <Image className="size-chart-responsive" src={TableSizeChartResponsive} alt="startbusiness-size-chart" />
                             </div>
                         </Col>
                     </Row>

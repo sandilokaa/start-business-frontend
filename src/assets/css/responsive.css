@@ -415,6 +415,10 @@
         width: 100%;
     }
 
+    #sb-related-products hr{
+        width: 100%;
+    }
+
     /* ---------- End Content Seacrh ---------- */
 
 
@@ -442,6 +446,29 @@
     }
     
     /* ---------- End Content Related Products ---------- */
+
+
+    /* ---------- Content Products Detail ---------- */
+
+    .sb-image-detail{
+        margin: 4% 0 0;
+    }
+
+    #sb-product-detail .product-image-preview{
+        margin: 100% 0 0;
+        height: 70px;
+        width: 70px;
+    }
+
+    .size-chart{
+        display: none;
+    }
+
+    .size-chart-responsive{
+        display: block;
+    }
+
+    /* ---------- End Content Products Detail ---------- */
 
     /* ================ END COLLECTION PAGE ================ */
 
