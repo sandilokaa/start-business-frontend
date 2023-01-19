@@ -40,7 +40,7 @@ const FooterGeneral = () => {
                             </div>
                             <div className="sb-whatsapp">
                                 <i className="bi bi-whatsapp"></i>
-                                <p>085975979880</p>
+                                <p>+(62)81234567891</p>
                             </div>
                             <div className="sb-email">
                                 <i className="bi bi-envelope-at-fill"></i>
