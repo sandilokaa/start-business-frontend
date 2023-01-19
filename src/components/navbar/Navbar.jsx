@@ -29,7 +29,7 @@ const NavbarGeneral = () => {
                         <Nav.Link className={splitLocation[1] === "" ? "active" : "nav-item"} onClick={() => navigate(`/`)} >Home</Nav.Link>
                         <Nav.Link className={splitLocation[1] === "collection" ? "active" : "nav-item"} onClick={() => navigate(`/collection`)}>Collection</Nav.Link>
                         <Nav.Link className="nav-item" >About Us</Nav.Link>
-                        <Nav.Link className="nav-item" >Contact Us</Nav.Link>
+                        <Nav.Link className={splitLocation[1] === "contact-us" ? "active" : "nav-item"} onClick={() => navigate(`/contact-us`)} >Contact Us</Nav.Link>
                         <Nav.Link className="nav-item" >Class</Nav.Link>
                     </Nav>
                     <Form className="d-flex">
