@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Collection from "./pages/collection/Collection";
 import ProductDetail from "./pages/detail-pages/ProductDetail";
+import ContactUs from "./pages/contact/ContactUs";
 
 const roots = document.getElementById('root');
 const root = createRoot(roots);
@@ -18,6 +19,7 @@ root.render(
             <Route path="/collection/detail" element={<ProductDetail />}>
                 <Route path=":productId" element={<ProductDetail />}/>
             </Route>
+            <Route path="/contact-us" element={<ContactUs />}></Route>
         </Routes>
     </Router>
 );
