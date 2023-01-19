@@ -780,3 +780,116 @@
 /* ================================ END DETAIL PAGE ================================ */
 
 /* =========================================================================== */
+
+
+/* =========================================================================== */
+
+/* ================================ CONTACT US PAGE ================================ */
+
+#get-in-touch h3{
+    margin: 12% 0 0;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+#get-in-touch hr{
+    width: 12%;
+    display: block;
+    margin: 2% auto 0;
+    border: 2px solid #4B56D2;
+}
+
+.icon-contact-address{
+    margin: 12% 0 0;
+}
+
+.icon-contact-address h6{
+    margin: 0 0 2% 0;
+}
+
+.icon-contact-address i{
+    font-size: 22px;
+    margin: 0 4% 0 0;
+}
+
+.icon-contact-address p{
+    display: inline-block;
+}
+
+.icon-media-social{
+    margin: 4% 0 0;
+}
+
+.icon-media-social h6{
+    margin: 0 0 2% 0;
+}
+
+.icon-media-social i{
+    font-size: 22px;
+    margin: 0 4% 0 0;
+}
+
+.geo-map{
+    margin: 6% 0 0;
+    height: 250px;
+    width: 500px;
+    border: 1px #000 solid;
+}
+
+.geo-map h6{
+    text-align: center;
+}
+
+.message-me{
+    margin: 12% 0 0;
+}
+
+.message-name{
+    margin: 6% 0 0;
+}
+
+.input-name{
+    background: #E6E4E0;
+    border: none;
+    height: 50px;
+}
+
+.message-email{
+    margin: 6% 0 0;
+}
+
+.input-email{
+    background: #E6E4E0;
+    border: none;
+    height: 50px;
+}
+
+.message-criticism{
+    margin: 6% 0 0;
+}
+
+.input-criticism{
+    background: #E6E4E0;
+    border: none;
+}
+
+.message-button-send{
+    margin: 6% 0 0;
+}
+
+.button-send{
+    width: 100%;
+    background: #4B56D2;
+    font-weight: 500;
+}
+
+.button-send:hover{
+    background: #4B56D2;
+}
+
+
+
+/* ================================ END CONTACT US PAGE ================================ */
+
+/* =========================================================================== */
