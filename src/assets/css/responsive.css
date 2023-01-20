@@ -490,6 +490,38 @@
 
     /* ================================================ */
 
+
+    /* ================================================ */
+
+    /* ================ CONTACT US PAGE ================ */
+
+    /* ---------- Content Contact Us & Message ---------- */
+    
+    #get-in-touch h3{
+        margin: 30% 0 0;
+    }
+
+    #get-in-touch hr{
+        width: 30%;
+    }
+
+    .geo-map{
+        margin: 6% 0 0;
+        height: 50%;
+        width: 100%;
+        border: 1px #000 solid;
+    }
+
+    .message-me{
+        margin: 48% 0 0;
+    }
+
+    /* ---------- Content Contact Us & Message ---------- */
+
+    /* ================ END CONTACT US PAGE ================ */
+
+    /* ================================================ */
+
 }
 
 /* ---------- End Responsive Design ---------- */
