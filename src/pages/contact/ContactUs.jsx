@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import {
     Row,
     Col,
@@ -8,9 +9,48 @@ import {
     Button
 } from "react-bootstrap";
 import HomeLayout from "../../layouts/home/HomeLayout";
+import axios from "axios";
 
 
 const ContactUs = () => {
+
+    const navigate = useNavigate();
+
+    const usernameField = useRef();
+    const emailField = useRef();
+    const suggestionField = useRef();
+
+    const onSuggestion = async () => {
+
+        try {
+
+            const suggestionPayload = {
+                username: usernameField.current.value,
+                email: emailField.current.value,
+                suggestion: suggestionField.current.value
+            };
+
+            const suggestionRequest = await axios.post(
+                `http://localhost:2000/api/v1/suggestions`,
+                suggestionPayload,
+                {
+                    headers: {
+                        "Access-Control-Allow-Origin": "*"
+                    }
+                }
+            );
+
+            const suggestionResponse = suggestionRequest.data;
+
+            alert(suggestionResponse.message);
+
+            if (suggestionResponse.status) navigate("/contact-us");
+
+        } catch (err) {
+            alert(err.message);
+        }
+
+    };
 
     return (
 
@@ -71,6 +111,8 @@ const ContactUs = () => {
                                         <Form.Control
                                             className="input-name"
                                             placeholder="Name"
+                                            ref={usernameField}
+
                                         />
                                     </InputGroup>
                                 </div>
@@ -79,14 +121,15 @@ const ContactUs = () => {
                                         <Form.Control
                                             className="input-email"
                                             placeholder="Email"
+                                            ref={emailField}
                                         />
                                     </InputGroup>
                                 </div>
                                 <div className="message-criticism">
-                                    <textarea class="form-control input-criticism" rows="10" placeholder="Write your message here"></textarea>
+                                    <textarea class="form-control input-criticism" rows="10" placeholder="Write your message here" ref={suggestionField}></textarea>
                                 </div>
                                 <div className="message-button-send">
-                                    <Button className="button-send">Send</Button>
+                                    <Button className="button-send" onClick={(e) => onSuggestion()}>Send</Button>
                                 </div>
                             </div>
                         </Col>
