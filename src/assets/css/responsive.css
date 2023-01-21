@@ -496,6 +496,13 @@
     /* ================ CONTACT US PAGE ================ */
 
     /* ---------- Content Contact Us & Message ---------- */
+
+    .alert-true{
+        z-index: 100;
+        width: 100%;
+        margin: 25% auto -25%;
+    }
+    
     
     #get-in-touch h3{
         margin: 30% 0 0;
