@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import {
     Row,
@@ -6,9 +6,11 @@ import {
     Container,
     Form,
     InputGroup,
-    Button
+    Button,
+    Alert
 } from "react-bootstrap";
 import HomeLayout from "../../layouts/home/HomeLayout";
+import MapWrapped from "../../components/contact-us/MapWrapped";
 import axios from "axios";
 
 
@@ -19,6 +21,11 @@ const ContactUs = () => {
     const usernameField = useRef();
     const emailField = useRef();
     const suggestionField = useRef();
+
+    const [trueResponse, setTrueResponse] = useState({
+        isTrue: false,
+        message: ""
+    });
 
     const onSuggestion = async () => {
 
@@ -42,7 +49,10 @@ const ContactUs = () => {
 
             const suggestionResponse = suggestionRequest.data;
 
-            alert(suggestionResponse.message);
+            setTrueResponse({
+                isTrue: true,
+                message: suggestionResponse.message
+            });
 
             if (suggestionResponse.status) navigate("/contact-us");
 
@@ -51,10 +61,24 @@ const ContactUs = () => {
         }
 
     };
+    
 
     return (
 
         <HomeLayout>
+            
+            {
+                trueResponse.isTrue && (
+                    <Container>
+                        <Row>
+                            <Col className="col-12 col-lg-12">
+                                <Alert variant="success" className="alert-true" onClose={() => setTrueResponse(false)} dismissible>{trueResponse.message}</Alert>
+                            </Col>
+                        </Row>
+                    </Container>
+                )
+            }
+            
 
             {/* ------------------- SB Get In Touch -------------------  */}
 
@@ -100,7 +124,10 @@ const ContactUs = () => {
                                 <i className="bi bi-youtube"></i>
                             </div>
                             <div className="geo-map">
-                                <h6>Ini nanti isinya map</h6>
+                                <MapWrapped
+                                    centerCoordinates={[-7.039577, 110.471573]}
+                                    coordinatesPosition={[-7.039577, 110.471573]}
+                                />
                             </div>
                         </Col>
                         <Col className="col-12 col-lg-6">
