@@ -507,13 +507,12 @@
 
     .geo-map{
         margin: 6% 0 0;
-        height: 50%;
+        height: 70%;
         width: 100%;
-        border: 1px #000 solid;
     }
 
     .message-me{
-        margin: 48% 0 0;
+        margin: 68% 0 0;
     }
 
     /* ---------- Content Contact Us & Message ---------- */

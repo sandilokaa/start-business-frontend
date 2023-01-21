@@ -786,6 +786,12 @@
 
 /* ================================ CONTACT US PAGE ================================ */
 
+.alert-true{
+    z-index: 100;
+    width: 50%;
+    margin: 10% auto -10%;
+}
+
 #get-in-touch h3{
     margin: 12% 0 0;
     display: flex;
@@ -834,7 +840,6 @@
     margin: 6% 0 0;
     height: 41%;
     width: 82%;
-    border: 1px #000 solid;
 }
 
 .geo-map h6{
