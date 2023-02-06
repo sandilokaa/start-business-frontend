@@ -522,10 +522,36 @@
         margin: 68% 0 0;
     }
 
-    /* ---------- Content Contact Us & Message ---------- */
+    /* ---------- End Content Contact Us & Message ---------- */
 
     /* ================ END CONTACT US PAGE ================ */
 
+    /* ================================================ */
+
+
+    /* ================ ABOUT US PAGE ================ */
+
+    /* ---------- Swiper Content (Carousel) ---------- */
+
+    #sb-about-swiper{
+        margin: 30% 0 0;
+    }
+
+    .sb-about-detail .content-1,
+    .sb-about-detail .content-2{
+        padding: 8%;
+        color: #FFFFFF;
+    }
+
+    .sb-about-detail .content-1 p,
+    .sb-about-detail .content-2 p{
+        margin: 4% 0 0;
+        text-align: justify;
+    }
+
+    /* ---------- End Swiper Content (Carousel) ---------- */
+
+    /* ================ END ABOUT US PAGE ================ */
     /* ================================================ */
 
 }

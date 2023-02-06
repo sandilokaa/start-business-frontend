@@ -8,6 +8,7 @@ import Collection from "./pages/collection/Collection";
 import ProductDetail from "./pages/detail-pages/ProductDetail";
 import ContactUs from "./pages/contact/ContactUs";
 import AboutUs from "./pages/about/AboutUs";
+import ClassTutorials from "./pages/class/ClassTutorials";
 
 const roots = document.getElementById('root');
 const root = createRoot(roots);
@@ -22,6 +23,7 @@ root.render(
             </Route>
             <Route path="/contact-us" element={<ContactUs />}></Route>
             <Route path="/about-us" element={<AboutUs />}></Route>
+            <Route path="/class" element={<ClassTutorials />}></Route>
         </Routes>
     </Router>
 );
