@@ -5,8 +5,10 @@ import {
     Container
 } from "react-bootstrap";
 import HomeLayout from "../../layouts/home/HomeLayout";
-import StartBusinessRecomendedTutorial from "../../components/class/StartBusinessRecomendedTutorial";
-import { statesData } from "../../assets/data/recomendedTutorial";
+import StartBusinessRecomendedCard from "../../components/class/StartBusinessRecomendedCard";
+import StartBusinessAllTutorialCard from "../../components/class/StartBusinessAllTutorialCard";
+import { recomendedData } from "../../assets/data/recomendedTutorial";
+import { allTutorialsData } from "../../assets/data/allTutorials";
 
 const ClassTutorials = () => {
 
@@ -21,7 +23,7 @@ const ClassTutorials = () => {
                     <Row>
                         <Col className="col-12 col-lg-12">
                             <div className="tutorials-header">
-                                <i class="bi bi-stack"></i>
+                                <i className="bi bi-stack"></i>
                                 <h4>Tutorials</h4>
                             </div>
                         </Col>
@@ -51,20 +53,21 @@ const ClassTutorials = () => {
                 <Container>
                     <Row>
                         <Col className="col-12 col-lg-6 sb-header-recomended">
-                            <h1>Recomended for you</h1>
+                            <h1>Recomended for you ({recomendedData.Collections.length})</h1>
                             <hr />
                         </Col>
                     </Row>
                     <Row>
                         {
-                            statesData.Collections.map((state) => {
+                            recomendedData.Collections.map((recomended) => {
                                 return (
 
-                                    <StartBusinessRecomendedTutorial
-                                        cardImage={state.properties.image}
-                                        cardTitle={state.properties.name}
-                                        cardDescription={state.properties.description}
-                                        cardLink={state.properties.link}
+                                    <StartBusinessRecomendedCard
+                                        key={recomended.id}
+                                        cardImage={recomended.properties.image}
+                                        cardTitle={recomended.properties.name}
+                                        cardDescription={recomended.properties.description}
+                                        cardLink={recomended.properties.link}
                                     />
 
                                 );
@@ -74,7 +77,41 @@ const ClassTutorials = () => {
                 </Container>
             </div>
 
-            {/* ------------------- SB Content Recomended Tutorials -------------------  */}
+            {/* ------------------- End SB Content Recomended Tutorials -------------------  */}
+
+
+            {/* ------------------- SB Content All Tutorials -------------------  */}
+            
+            <div id="sb-all-tutorials">
+                <Container>
+                    <Row>
+                        <Col className="col-12 col-lg-6 sb-header-all">
+                            <h1>All Tutorials For You ({allTutorialsData.Collections.length})</h1>
+                            <hr />
+                        </Col>
+                    </Row>
+                    <Row>
+                        {
+                            allTutorialsData.Collections.map((tutorials) => {
+                                return (
+
+                                    <StartBusinessAllTutorialCard
+                                        key={tutorials.id}
+                                        cardImage={tutorials.properties.image}
+                                        cardTitle={tutorials.properties.name}
+                                        cardDescription={tutorials.properties.description}
+                                        cardLink={tutorials.properties.link}
+                                    />
+
+                                );
+                            })
+                        }
+                    </Row>
+                </Container>
+            </div>
+
+
+            {/* ------------------- End SB Content All Tutorials -------------------  */}
 
         </HomeLayout>
 

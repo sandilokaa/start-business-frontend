@@ -69,7 +69,6 @@ const ProductDetail = () => {
                     <Row  key={productId}>
                         <Col className="col-9 col-lg-5 sb-image-detail">
                             <div className="sb-product-image">
-                                {/* <Image className="product-image" src={productData ? productData.picture : null} alt="startbusiness-select-color" /> */}
 
                                 <ReactImageMagnify
                                     enlargedImagePosition="over"
@@ -88,6 +87,7 @@ const ProductDetail = () => {
                                         }
                                     }} 
                                 />
+                                
                             </div>
                         </Col>
                         <Col className="col-3 col-lg-2 sb-image-preview">
