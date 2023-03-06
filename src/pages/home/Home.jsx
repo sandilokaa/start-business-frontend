@@ -201,10 +201,11 @@ const Home = () => {
                         </Col>
                         <Col className="col-12 col-lg-8 sb-description-content-5">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Pada tanggal 10 Desember 2022, Start Business terbentuk setelah melalui diskusi yang matang. 
+                            Start Business adalah platform yang fokus pada layanan POD (Print On Demand) 
+                            dan juga menyediakan layanan kustomisasi berbagai produk seperti kaos, jaket, hoodie, topi, totebag, dan polo dalam bentuk satuan atau grosir. 
+                            Nama Start Business berasal dari kata "Start" yang berarti memulai dan "Business" yang berarti bisnis, 
+                            sehingga memberikan kesempatan bagi siapa saja yang ingin memulai usaha dengan modal minimal.
                             </p>
                         </Col>
                     </Row>
@@ -231,7 +232,7 @@ const Home = () => {
                     <Row>
                         <Col className="col-12 col-lg-6 sb-heading-content-6">
                             <h1>Frequently Asked Questions</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Perlu jawaban cepat? Baca FAQ kami di samping.</p>
                         </Col>
                         <Col className="col-12 col-lg-6 sb-faq-accordion">
                             <Accordion defaultActiveKey="0" flush>
@@ -302,13 +303,7 @@ const Home = () => {
 
             {/* ------------------- SB Content 8 -------------------  */}
 
-            <div id="myButton">
-                <Helmet>
-                    {
-                        console.log('halo')
-                    }
-                </Helmet>
-            </div>
+            <div id="myButton"></div>
 
             {/* ------------------- End SB Content 8 -------------------  */}
 

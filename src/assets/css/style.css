@@ -48,7 +48,15 @@
     padding: 5px 60px;
     background: #4B56D2;
     color: #FFFFFF;
-    font-weight: 500;
+    font-weight: 600;
+    transition: 0.2s all ease-in-out;
+}
+
+.btn-authentication:hover{
+    background: transparent;
+    border: 1px solid #4B56D2;
+    color: #4B56D2;
+    font-weight: 600;
 }
 
 /* ---------- End Navbar ---------- */
@@ -93,7 +101,15 @@
     padding: 10px 60px;
     background: #4B56D2;
     color: #FFFFFF;
-    font-weight: 500;
+    font-weight: 600;
+    transition: 0.2s all ease-in-out;
+}
+
+.sb-heading-content-1 .btn-start:hover{
+    background: transparent;
+    border: 1px solid #4B56D2;
+    color: #4B56D2;
+    font-weight: 600;
 }
 
 .sb-image-content-1{
@@ -257,8 +273,17 @@
     padding: 10px 60px;
     background: #4B56D2;
     color: #FFFFFF;
-    font-weight: 500;
+    font-weight: 600;
+    transition: 0.2s all ease-in-out;
 }
+
+.sb-heading-content-3 .btn-start:hover{
+    background: transparent;
+    border: 1px solid #4B56D2;
+    color: #4B56D2;
+    font-weight: 600;
+}
+
 
 /* ---------- End Content 3 ---------- */
 
@@ -886,11 +911,15 @@
 .button-send{
     width: 100%;
     background: #4B56D2;
-    font-weight: 500;
+    font-weight: 600;
+    transition: 0.2s all ease-in-out;
 }
 
 .button-send:hover{
-    background: #4B56D2;
+    background: transparent;
+    border: 1px solid #4B56D2;
+    color: #4B56D2;
+    font-weight: 600;
 }
 
 
