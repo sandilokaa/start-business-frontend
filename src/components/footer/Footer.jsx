@@ -12,7 +12,7 @@ const FooterGeneral = () => {
 
     return (
 
-        <div id="sb-content-7">
+        <div id="sb-content-footer">
             <Container>
                 <Row className="sb-row-conclusion">
                     <Col className="col-12 col-lg-4 sb-about-us">

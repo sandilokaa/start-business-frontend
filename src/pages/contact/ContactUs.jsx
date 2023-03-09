@@ -125,8 +125,8 @@ const ContactUs = () => {
                             </div>
                             <div className="geo-map">
                                 <MapWrapped
-                                    centerCoordinates={[-7.039577, 110.471573]}
-                                    coordinatesPosition={[-7.039577, 110.471573]}
+                                    centerCoordinates={[-7.065296333352669, 110.44648526868401]}
+                                    coordinatesPosition={[-7.065296333352669, 110.44648526868401]}
                                 />
                             </div>
                         </Col>
